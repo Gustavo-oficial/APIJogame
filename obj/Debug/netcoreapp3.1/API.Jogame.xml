@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API.Jogame</name>
+    </assembly>
+    <members>
+        <member name="M:API.Jogame.Controllers.JogadorController.Get">
+            <summary>
+            Ler todos os jogadores já cadastrados
+            </summary>
+            <returns>Lista de jogadores</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogadorController.Get(System.Guid)">
+            <summary>
+            Busca um único jogador
+            </summary>
+            <param name="id">ID do jogador</param>
+            <returns>Jogador buscado</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogadorController.Post(API.Jogame.Domains.Jogador)">
+            <summary>
+            Cadastra um jogador no sistema
+            </summary>
+            <param name="jogador">Obejto completo de um jogador</param>
+            <returns>Jogador cadastrado</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogadorController.Put(System.Guid,API.Jogame.Domains.Jogador)">
+            <summary>
+            Altera determinado jogador do sistema
+            </summary>
+            <param name="id">ID do jogador</param>
+            <param name="jogador">Objeto alterado do jogador</param>
+            <returns>Jogador alterado</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogadorController.Delete(System.Guid)">
+            <summary>
+            Exclui um jogador do sistema
+            </summary>
+            <param name="id">ID do jogador a ser excluído</param>
+            <returns>ID do jogador excluído</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogoController.Get">
+            <summary>
+            Ler todos os jogos já cadastrados
+            </summary>
+            <returns>Lista de jogos</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogoController.Get(System.Guid)">
+            <summary>
+            Busca um único jogo
+            </summary>
+            <param name="id">ID do jogo</param>
+            <returns>Jogo buscado</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogoController.Post(API.Jogame.Domains.Jogo)">
+            <summary>
+            Cadastra um jogo no sistema
+            </summary>
+            <param name="jogo">Obejto completo de um jogo</param>
+            <returns>Jogo cadastrado</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogoController.Put(System.Guid,API.Jogame.Domains.Jogo)">
+            <summary>
+            Altera determinado jogo do sistema
+            </summary>
+            <param name="id">ID do jogo</param>
+            <param name="jogo">Objeto alterado do jogo</param>
+            <returns>Jogo alterado</returns>
+        </member>
+        <member name="M:API.Jogame.Controllers.JogoController.Delete(System.Guid)">
+            <summary>
+            Exclui um jogo do sistema
+            </summary>
+            <param name="id">ID do jogo a ser excluído</param>
+            <returns>ID do jogo excluído</returns>
+        </member>
+        <member name="M:API.Jogame.Repositories.JogoRepository.Adicionar(API.Jogame.Domains.Jogo)">
+            <summary>
+            Adiciona um novo jogo
+            </summary>
+            <param name="jogo">Jogo a ser adcionado</param>
+        </member>
+        <member name="M:API.Jogame.Repositories.JogoRepository.Alterar(API.Jogame.Domains.Jogo)">
+            <summary>
+            Edita os dados de um jogo da lista
+            </summary>
+            <param name="jogo">Dados do jogo</param>
+        </member>
+        <member name="M:API.Jogame.Repositories.JogoRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca um jogo pelo seu Id
+            </summary>
+            <param name="id">Id do jogo</param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Jogame.Repositories.JogoRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca o jogo pelo nome
+            </summary>
+            <param name="nome">Nome do jogo</param>
+            <returns>Retorna um jogo</returns>
+        </member>
+        <member name="M:API.Jogame.Repositories.JogoRepository.Excluir(System.Guid)">
+            <summary>
+            Remove um jogo da lista 
+            </summary>
+            <param name="id">Id do jogo</param>
+        </member>
+        <member name="M:API.Jogame.Repositories.JogoRepository.Listar">
+            <summary>
+            Lista todos os jogos
+            </summary>
+            <returns>Lista de jogos</returns>
+        </member>
+    </members>
+</doc>
